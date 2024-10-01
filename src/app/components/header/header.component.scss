@@ -38,3 +38,19 @@ header .text-container h1{
 header .text-container p{
     color: var(--light-gray);
 }
+
+header .text-container .heading{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    margin-bottom: 1.4rem;
+    gap: .9rem;
+}
+
+header .text-container .heading .heading-border{
+    height: .8rem;
+    width: 30%;
+    background-color: var(--dark-gray);
+}
