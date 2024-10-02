@@ -3,7 +3,7 @@ export interface UnitsResponse{
   locations: Location[],
 }
 
-interface Location{
+export interface Location{
     id: number,
     title: string,
     content: string,
@@ -15,7 +15,7 @@ interface Location{
     schedules: Schedule[]
 }
 
-interface Schedule{
+export interface Schedule{
     weekdays: string,
     hour: string,
 }
