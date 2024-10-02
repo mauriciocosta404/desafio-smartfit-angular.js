@@ -28,7 +28,7 @@ export class FormsComponent implements OnInit{
 
     this.formGroup = this.formBuilder.group({
       hour: '',
-      showClosed: false,
+      showClosed: true,
     });
   }
 
