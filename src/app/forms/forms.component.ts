@@ -23,8 +23,8 @@ export class FormsComponent implements OnInit{
 
   ngOnInit(): void {
     this.unitService.getAllUnits().subscribe( data => {
-      this.results = data.locations;
-      this.filteredResults = data.locations;
+      this.results = data;
+      this.filteredResults = data;
     });
 
     this.formGroup = this.formBuilder.group({
@@ -33,11 +33,9 @@ export class FormsComponent implements OnInit{
     });
   }
 
-  
-
   onSubmit() {
     let { showClosed, hour } = this.formGroup.value;
-    
+
     this.filteredResults = this.unitService.filter(this.results, showClosed, hour);
   }
 
