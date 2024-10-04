@@ -1,13 +1,13 @@
 <div class="card">
     <span [ngClass]="{opened: card.opened}">{{card.opened ? 'Aberto' : 'Fechado'}}</span>
     <h3>{{ card.title }}</h3>
-    <p>{{ card.content }}</p>
+    <p [innerHTML]="card.content"></p>
 
     <ul class="permition-things">
-        <img [src]="'/assets/images/png/' + card.mask +'-mask.png'" alt="">
-        <img [src]="'/assets/images/png/' + card.towel +'-towel.png'" alt="">
-        <img [src]="'/assets/images/png/' + card.fountain+'-fountain.png'" alt="">
-        <img [src]="'/assets/images/png/' + card.locker_room +'-lockerroom.png'" alt="">
+        <img *ngIf="card.mask" [src]="'/assets/images/png/' + card.mask +'-mask.png'" alt="">
+        <img *ngIf="card.towel" [src]="'/assets/images/png/' + card.towel +'-towel.png'" alt="">
+        <img *ngIf="card.fountain" [src]="'/assets/images/png/' + card.fountain+'-fountain.png'" alt="">
+        <img *ngIf="card.locker_room" [src]="'/assets/images/png/' + card.locker_room +'-lockerroom.png'" alt="">
     </ul>
 
     <ul>
