@@ -1,0 +1,28 @@
+footer{
+    background: var(--dark-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+
+    width: 100%;
+    padding: 1.4rem;
+}
+
+footer .logo-container {
+    padding: 24px;
+    width: 100%;  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+footer .logo-container img{
+    height: 4rem;
+}
+
+footer p{
+    color: white;
+}
